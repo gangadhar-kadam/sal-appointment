@@ -353,7 +353,7 @@ def on_trash(self):
 		
 
 def set_complete_status(doc,method):
-	frappe.errprint('appointment')
+	#frappe.errprint('appointment')
 	if doc.from_appointment:
 		apt= frappe.get_doc("Appointment",doc.from_appointment)
 		apt.status='Completed'
